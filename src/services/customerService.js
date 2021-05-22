@@ -12,7 +12,7 @@ const create = (datas) => {
   const customer = new CustomerModel({
     firstName: datas.firstName,
     lastName: datas.lastName,
-    birthDate: datas.birthDate,
+    birthdate: datas.birthdate,
     telNum: datas.telNum,
     email: datas.email,
   })

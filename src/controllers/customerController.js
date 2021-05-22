@@ -31,7 +31,7 @@ const create = async (req, res) => {
   if (
     datas.firstName &&
     datas.lastName &&
-    datas.birthDate &&
+    datas.birthdate &&
     datas.telNum &&
     datas.email
   ) {
