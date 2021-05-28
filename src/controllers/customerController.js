@@ -54,7 +54,7 @@ const update = async (req, res) => {
   const datas = req.body
   try {
     await customerService.update(id, datas)
-    res.status(201).send("Customer's datas updated")
+    res.sendStatus(204)
   } catch (err) {
     if (err.kind === 'ObjectId') {
       res.status(404).send(`No customer found with id ${id}`)
